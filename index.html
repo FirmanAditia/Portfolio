@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firman Aditia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">
+    <img id="logoImg" src="channels4_profile.jpg" alt="AF Logo"/>
+    <span>Firman</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Contact Me</a>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-text">FA</div>
+  <div class="hero-left">
+    <div class="hero-tag">Data & Business Analyst</div>
+    <h1 class="hero-name">
+      Firman<br/>
+      <em>Aditia</em>
+    </h1>
+    <p class="hero-desc">
+      Crafting clean, modern, and responsive digital experiences. 
+      Passionate about design systems, interaction design, and bringing ideas to life on the web.
+    </p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-primary">View Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Years Exp.</span></div>
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img id="heroImg" src="channels4_profile.jpg" alt="AF"/>
+      <div class="hero-img-accent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <div>
+      <span class="section-num">01 — About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img id="aboutImg" src="channels4_profile.jpg" alt="AF Logo"/>
+      <span class="about-tag-side">Data · Analysis · Business</span>
+    </div>
+    <div class="about-text reveal">
+      <p>
+        Halo! Saya <strong>Firman Aditia</strong> — seorang data dan business analyst 
+        yang berfokus pada menciptakan pengalaman digital yang bersih, fungsional, dan berkesan.
+      </p>
+      <p>
+        Dengan pengalaman lebih dari <strong>3 tahun</strong> di industri ini, saya telah bekerja 
+        pada berbagai proyek mulai dari landing page, portfolio, hingga aplikasi web skala penuh.
+      </p>
+      <p>
+        Saya percaya bahwa desain yang baik bukan hanya soal estetika — 
+        melainkan bagaimana sebuah produk <strong>terasa dan berfungsi</strong> bagi penggunanya.
+      </p>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Power BI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <div>
+      <span class="section-num">02 — Services</span>
+      <h2 class="section-title">What I Do</h2>
+    </div>
+    <div class="section-line"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+      <h3 class="service-title">Web Development</h3>
+      <p class="service-desc">Membangun website modern yang responsif dan cepat menggunakan teknologi terkini seperti HTML, CSS, JavaScript, dan React.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+      <h3 class="service-title">UI/UX Design</h3>
+      <p class="service-desc">Merancang antarmuka yang intuitif dan menarik, dengan fokus pada pengalaman pengguna yang optimal dan estetika yang kuat.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+      <h3 class="service-title">Responsive Design</h3>
+      <p class="service-desc">Memastikan setiap website tampil sempurna di semua ukuran layar — dari mobile hingga desktop besar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header reveal">
+    <div>
+      <span class="section-num">03 — Portfolio</span>
+      <h2 class="section-title">Recent Work</h2>
+    </div>
+    <div class="section-line"></div>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-item reveal">
+      <div class="portfolio-placeholder"><img class="logo-sm logoPlaceholder" src="channels4_profile.jpg" alt=""/></div>
+      <div class="portfolio-overlay">
+        <span class="portfolio-num">01</span>
+        <h3 class="portfolio-title">BCG-Churn Analysis</h3>
+        <p class="portfolio-cat">Data Analysis · Business Intelligence</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal">
+      <div class="portfolio-placeholder"><img class="logo-sm logoPlaceholder" src="channels4_profile.jpg" alt=""/></div>
+      <div class="portfolio-overlay">
+        <span class="portfolio-num">02</span>
+        <h3 class="portfolio-title">Python Job-Listing Scraper</h3>
+        <p class="portfolio-cat">Data Analysis · Web Scraping</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal">
+      <div class="portfolio-placeholder"><img class="logo-sm logoPlaceholder" src="channels4_profile.jpg" alt=""/></div>
+      <div class="portfolio-overlay">
+        <span class="portfolio-num">03</span>
+        <h3 class="portfolio-title">Dashboard UI</h3>
+        <p class="portfolio-cat">UI/UX · React</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal">
+      <div class="portfolio-placeholder"><img class="logo-sm logoPlaceholder" src="channels4_profile.jpg" alt=""/></div>
+      <div class="portfolio-overlay">
+        <span class="portfolio-num">04</span>
+        <h3 class="portfolio-title">Portfolio Web</h3>
+        <p class="portfolio-cat">Web Dev · Design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <div class="big-text">LET'S<br/><em>WORK</em><br/>TOGETHER</div>
+      <p style="color:var(--gray);font-size:0.9rem;line-height:1.8;">
+        Punya proyek menarik atau butuh kolaborasi? Jangan ragu untuk menghubungi saya.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:arif@email.com">firmanaditia556@email.com</a></div>
+        <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+62 858-0717-8939</span></div>
+        <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Sidoarjo, Jawa Timur, Indonesia</span></div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <input type="text" placeholder="Nama Lengkap"/>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Alamat Email"/>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Subjek"/>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Pesan Anda..."></textarea>
+      </div>
+      <button class="form-submit">Kirim Pesan <i class="fa-solid fa-arrow-right" style="margin-left:0.5rem;"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img id="footerLogo" src="channels4_profile.jpg" alt="AF"/>
+    <span>Firman Aditia</span>
+  </div>
+  <p class="footer-copy">&copy; 2025 Firman Aditia. All Rights Reserved.</p>
+  <div class="footer-social">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
