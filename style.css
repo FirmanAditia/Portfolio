@@ -329,7 +329,7 @@
       display: flex; align-items: center; justify-content: center;
       background: var(--mid);
     }
-    .portfolio-placeholder .logo-sm { width: 960px; opacity: 0.5; }
+    .portfolio-placeholder .logo-sm { width: 120px; opacity: 1.0; }
 
     /* CONTACT */
     #contact { border-top: 1px solid var(--line); }
